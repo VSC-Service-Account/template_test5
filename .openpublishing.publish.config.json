@@ -22,6 +22,7 @@
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
           "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1",
           "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
         ],
         "docset_postbuild": [
@@ -39,6 +40,12 @@
       ],
       "DiffFolder": [
         "template_test5/api"
+      ],
+      "JoinTOCPlugin": [
+        {
+          "ConceptualTOCUrl": "/fenxu_contoso_ppe/toc.json", 
+          "TopLevelTOC": "template_test5/api/template_test6/toc.yml"
+        }
       ]
     }
   ],
